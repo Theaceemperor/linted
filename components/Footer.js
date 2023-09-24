@@ -11,7 +11,12 @@ export default function Footer() {
                 <ul className="grid grid-cols-2 text-center lg:flex md:flex text-sm lg:justify-between md:justify-between items-center">
                     <li>
                     <Link 
-                    href={"/[cart]?productPrice=10&productName=Lint Remover"}
+                    href={ 
+                        {
+                            pathname:'/[carts]',
+                            query: { carts: 'cart', productname:'Lint Remover', productprice:'2' }
+                        }
+                    }
                     className='py-1 px-2 font-bold flex gap-1 items-center justify-center'
                     >Order now
                         <FaShoppingCart />

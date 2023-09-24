@@ -10,7 +10,7 @@ export default function NavigationBar() {
             <MenuPop />
             <article className="invisible sm:visible">
                 <nav className="top-0 left-0 right-0 fixed z-50 bg-red-300/60 text-black p-5">
-                    <ul className="flex flex-col md:flex-row lg:flex-row font-bold z-50 items-center lg:justify-evenly">
+                    <ul className="flex flex-col md:flex-row lg:flex-row font-bold z-50 items-center md:justify-evenly lg:justify-evenly">
                         <li><HomePageLink /></li>
                         <li><ContactPageLink /></li>
                         <li><ShoppingCartLink productName={'Lint Remover'} productPrice={'10'}/></li>

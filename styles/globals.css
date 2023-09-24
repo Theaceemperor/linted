@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .swiper {
+        width: 80%;
+        height: fit-content;
+        text-align: center;
+      }
+      
+      .container {
+        display: flex;;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        background: inherit;
+        margin: 20px 0;    
+      }
+      .swiper .swiper-button-prev {
+        color: #de4f0a;
+      }
+      .swiper .swiper-button-next {
+        color: #de4f0a;
+      }
+      
+      @media screen and (max-width: 700px){
+        .swiper {
+            width: 80%;
+            height: fit-content;
+            text-align: center;
+        }
+        .swiper p{
+            font-size: 12px;
+        }
+        .swiper h1 {
+            font-size: 20px;
+        }
+      }
+
+      
+.acc {
+  color: black;
+  border: 1px solid pink;
+  width: 25rem;
+  height: 2.8rem;
+  cursor: pointer;
+  margin: 1rem 0;
+  overflow: hidden;
+  border-radius: 9px;
+  transition: all 0.3s;
+}
+
+.acc:hover {
+  box-shadow: 0 1px 10px black;
+}
+.acctop {
+  position: relative;
+  margin: 0.6rem 1rem;
+}
+.acc h2 {
+  font-size: 1.2rem;
+}
+.acctop::after {
+  content: '+';
+  font-weight: bold;
+  font-size: 1.9rem;
+  position: absolute;
+  cursor: pointer;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.content {
+  height: 0px;
+  padding: 1rem;
+  transition: all 0.3s;
+}
+hr {
+  opacity: 0;
+}
+.acc.active {
+  height: auto;
+}
+.para {
+  font-size: 15px;
+  padding: 0.5rem;
+}
+.acc.active hr {
+  opacity: 1;
+}
+.acc.active .acctop::after {
+  content: '-';
+}
+.acc.active .acc-content {
+  height: auto;
+  transition: all 0.3s;
+}
+@media screen and (max-width: 420px) {
+  .acc {
+      width: 90%;
+      margin: 0.6rem auto;
+  }
+  .acctop h2 {
+      font-size: 0.9rem;
+  }
+}
+
+}

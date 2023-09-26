@@ -32,7 +32,12 @@ export function BtnField() {
           <RiContactsFill />
         </Link>
         <Link 
-        href={"/[cart]?productPrice=10&productName=Lint Remover"}
+        href={
+          {
+              pathname:'/[carts]',
+              query: { carts: 'cart', productname: 'Lint Remover', productprice: '2' }
+          }
+      }
         className='border-y py-1 px-2 border-red-600/50 bg-red-300/30 rounded-lg hover:border-transparent font-bold flex gap-1 items-center justify-center'>
           Shop Now<FaShoppingCart />
         </Link>
